@@ -5,6 +5,9 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $primary-text-color;
+  &.modal-open{
+    overflow: hidden;
+  }
 }
 
 .list {
@@ -26,3 +29,5 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+
