@@ -29,10 +29,12 @@
           >
           <ul class="list site-nav__list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link ">Студія</a>
+              <a href="./index.html" class="site-nav__link">Студія</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a>
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--current"
+                >Портфоліо</a
+              >
             </li>
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
           </ul>
@@ -139,33 +141,77 @@
           <ul class="list works">
             <li class="works__item">
               <div class="works__description">
-                <img
-                  class="works__image"
-                  src="./images/portfolio/imglaptop.jpg"
-                  alt="Ноутбук"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_1.webp   1x,
+                      ./images/portfolio/desktop/2x/project_1.webp   2x,
+                      ./images/portfolio/tablet/1x/project_1.webp    1x,
+                      ./images/portfolio/tablet/2x/project_1.webp    2x,
+                      ./images/portfolio/mobile/1x/project_1.webp    1x,
+                      ./images/portfolio/mobile/2x/project_1@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_1.jpg 1x,
+                      ./images/portfolio/desktop/2x/project_1.jpg 2x,
+                      ./images/portfolio/tablet/1x/project_1.jpg  1x,
+                      ./images/portfolio/tablet/2x/project_1.jpg  2x,
+                      ./images/portfolio/mobile/1x/project_1.jpg  1x,
+                      ./images/portfolio/mobile/2x/project_1.jpg  2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/portfolio/tablet/1x/project_1.jpg"
+                    alt="Технокряк"
+                    class="works__image"
+                  />
+                </picture>
                 <p class="works__label">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
                   особу.
                 </p>
               </div>
-              <div class="works__wrapper">
+              <div class="works__wrapper works__wrapper--padding">
                 <h3 class="works__title">Технокряк</h3>
                 <p class="works__text">Веб-сайт</p>
               </div>
             </li>
             <li class="works__item">
               <div class="works__description">
-                <img
-                  class="works__image"
-                  src="./images/portfolio/imgbasketball.jpg"
-                  alt="Баскетбол"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_2.webp   1x,
+                      ./images/portfolio/desktop/2x/project_2.webp   2x,
+                      ./images/portfolio/tablet/1x/project_2.webp    1x,
+                      ./images/portfolio/tablet/2x/project_2.webp    2x,
+                      ./images/portfolio/mobile/1x/project_2.webp    1x,
+                      ./images/portfolio/mobile/2x/project_2@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_2.jpg 1x,
+                      ./images/portfolio/desktop/2x/project_2.jpg 2x,
+                      ./images/portfolio/tablet/1x/project_2.jpg  1x,
+                      ./images/portfolio/tablet/2x/project_2.jpg  2x,
+                      ./images/portfolio/mobile/1x/project_2.jpg  1x,
+                      ./images/portfolio/mobile/2x/project_2.jpg  2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/portfolio/tablet/1x/project_2.jpg"
+                    alt="New Orlean vs Golden Star"
+                    class="works__image"
+                  />
+                </picture>
                 <p class="works__label">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -181,13 +227,35 @@
             </li>
             <li class="works__item">
               <div class="works__description">
-                <img
-                  class="works__image"
-                  src="./images/portfolio/imgseafood.jpg"
-                  alt="Магазин морепродуктів"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_3.webp   1x,
+                      ./images/portfolio/desktop/2x/project_3.webp   2x,
+                      ./images/portfolio/tablet/1x/project_3.webp    1x,
+                      ./images/portfolio/tablet/2x/project_3.webp    2x,
+                      ./images/portfolio/mobile/1x/project_3.webp    1x,
+                      ./images/portfolio/mobile/2x/project_3@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_3.jpg 1x,
+                      ./images/portfolio/desktop/2x/project_3.jpg 2x,
+                      ./images/portfolio/tablet/1x/project_3.jpg  1x,
+                      ./images/portfolio/tablet/2x/project_3.jpg  2x,
+                      ./images/portfolio/mobile/1x/project_3.jpg  1x,
+                      ./images/portfolio/mobile/2x/project_3.jpg  2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/portfolio/tablet/1x/project_3.jpg"
+                    alt="Seafood"
+                    class="works__image"
+                  />
+                </picture>
                 <p class="works__label">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -201,13 +269,35 @@
             </li>
             <li class="works__item">
               <div class="works__description">
-                <img
-                  class="works__image"
-                  src="./images/portfolio/imgheadphones.jpg"
-                  alt="Навушники"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_4.webp   1x,
+                      ./images/portfolio/desktop/2x/project_4.webp   2x,
+                      ./images/portfolio/tablet/1x/project_4.webp    1x,
+                      ./images/portfolio/tablet/2x/project_4.webp    2x,
+                      ./images/portfolio/mobile/1x/project_4.webp    1x,
+                      ./images/portfolio/mobile/2x/project_4@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_4.jpg 1x,
+                      ./images/portfolio/desktop/2x/project_4.jpg 2x,
+                      ./images/portfolio/tablet/1x/project_4.jpg  1x,
+                      ./images/portfolio/tablet/2x/project_4.jpg  2x,
+                      ./images/portfolio/mobile/1x/project_4.jpg  1x,
+                      ./images/portfolio/mobile/2x/project_4.jpg  2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/portfolio/tablet/1x/project_4.jpg"
+                    alt="Prime"
+                    class="works__image"
+                  />
+                </picture>
                 <p class="works__label">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -221,13 +311,35 @@
             </li>
             <li class="works__item">
               <div class="works__description">
-                <img
-                  class="works__image"
-                  src="./images/portfolio/imgboxes.jpg"
-                  alt="Коробки"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_5.webp   1x,
+                      ./images/portfolio/desktop/2x/project_5.webp   2x,
+                      ./images/portfolio/tablet/1x/project_5.webp    1x,
+                      ./images/portfolio/tablet/2x/project_5.webp    2x,
+                      ./images/portfolio/mobile/1x/project_5.webp    1x,
+                      ./images/portfolio/mobile/2x/project_5@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_5.jpg 1x,
+                      ./images/portfolio/desktop/2x/project_5.jpg 2x,
+                      ./images/portfolio/tablet/1x/project_5.jpg  1x,
+                      ./images/portfolio/tablet/2x/project_5.jpg  2x,
+                      ./images/portfolio/mobile/1x/project_5.jpg  1x,
+                      ./images/portfolio/mobile/2x/project_5.jpg  2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/portfolio/tablet/1x/project_5.jpg"
+                    alt="Проєкт Boxes"
+                    class="works__image"
+                  />
+                </picture>
                 <p class="works__label">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -241,13 +353,35 @@
             </li>
             <li class="works__item">
               <div class="works__description">
-                <img
-                  class="works__image"
-                  src="./images/portfolio/imgmac.jpg"
-                  alt="Комп'ютер"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_6.webp   1x,
+                      ./images/portfolio/desktop/2x/project_6.webp   2x,
+                      ./images/portfolio/tablet/1x/project_6.webp    1x,
+                      ./images/portfolio/tablet/2x/project_6.webp    2x,
+                      ./images/portfolio/mobile/1x/project_6.webp    1x,
+                      ./images/portfolio/mobile/2x/project_6@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_6.jpg 1x,
+                      ./images/portfolio/desktop/2x/project_6.jpg 2x,
+                      ./images/portfolio/tablet/1x/project_6.jpg  1x,
+                      ./images/portfolio/tablet/2x/project_6.jpg  2x,
+                      ./images/portfolio/mobile/1x/project_6.jpg  1x,
+                      ./images/portfolio/mobile/2x/project_6.jpg  2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/portfolio/tablet/1x/project_6.jpg"
+                    alt="Inspiration has no Borders"
+                    class="works__image"
+                  />
+                </picture>
                 <p class="works__label">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -261,13 +395,35 @@
             </li>
             <li class="works__item">
               <div class="works__description">
-                <img
-                  class="works__image"
-                  src="./images/portfolio/imgbook.jpg"
-                  alt="Книга"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_7.webp   1x,
+                      ./images/portfolio/desktop/2x/project_7.webp   2x,
+                      ./images/portfolio/tablet/1x/project_7.webp    1x,
+                      ./images/portfolio/tablet/2x/project_7.webp    2x,
+                      ./images/portfolio/mobile/1x/project_7.webp    1x,
+                      ./images/portfolio/mobile/2x/project_7@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_7.jpg 1x,
+                      ./images/portfolio/desktop/2x/project_7.jpg 2x,
+                      ./images/portfolio/tablet/1x/project_7.jpg  1x,
+                      ./images/portfolio/tablet/2x/project_7.jpg  2x,
+                      ./images/portfolio/mobile/1x/project_7.jpg  1x,
+                      ./images/portfolio/mobile/2x/project_7.jpg  2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/portfolio/tablet/1x/project_7.jpg"
+                    alt="Limited Edition"
+                    class="works__image"
+                  />
+                </picture>
                 <p class="works__label">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -281,13 +437,35 @@
             </li>
             <li class="works__item">
               <div class="works__description">
-                <img
-                  class="works__image"
-                  src="./images/portfolio/imglabel.jpg"
-                  alt="Бірка"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_8.webp   1x,
+                      ./images/portfolio/desktop/2x/project_8.webp   2x,
+                      ./images/portfolio/tablet/1x/project_8.webp    1x,
+                      ./images/portfolio/tablet/2x/project_8.webp    2x,
+                      ./images/portfolio/mobile/1x/project_8.webp    1x,
+                      ./images/portfolio/mobile/2x/project_8@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_8.jpg 1x,
+                      ./images/portfolio/desktop/2x/project_8.jpg 2x,
+                      ./images/portfolio/tablet/1x/project_8.jpg  1x,
+                      ./images/portfolio/tablet/2x/project_8.jpg  2x,
+                      ./images/portfolio/mobile/1x/project_8.jpg  1x,
+                      ./images/portfolio/mobile/2x/project_8.jpg  2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/portfolio/tablet/1x/project_8.jpg"
+                    alt="Проєкт LAB"
+                    class="works__image"
+                  />
+                </picture>
                 <p class="works__label">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -301,13 +479,35 @@
             </li>
             <li class="works__item">
               <div class="works__description">
-                <img
-                  class="works__image"
-                  src="./images/portfolio/imglaptop-hands.jpg"
-                  alt="Людина працює за ноутбуком"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_9.webp   1x,
+                      ./images/portfolio/desktop/2x/project_9.webp   2x,
+                      ./images/portfolio/tablet/1x/project_9.webp    1x,
+                      ./images/portfolio/tablet/2x/project_9.webp    2x,
+                      ./images/portfolio/mobile/1x/project_9.webp    1x,
+                      ./images/portfolio/mobile/2x/project_9@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1x/project_9.jpg 1x,
+                      ./images/portfolio/desktop/2x/project_9.jpg 2x,
+                      ./images/portfolio/tablet/1x/project_9.jpg  1x,
+                      ./images/portfolio/tablet/2x/project_9.jpg  2x,
+                      ./images/portfolio/mobile/1x/project_9.jpg  1x,
+                      ./images/portfolio/mobile/2x/project_9.jpg  2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/portfolio/tablet/1x/project_9.jpg"
+                    alt="Growing Business"
+                    class="works__image"
+                  />
+                </picture>
                 <p class="works__label">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
