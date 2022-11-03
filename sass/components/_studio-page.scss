@@ -9,20 +9,20 @@
   background-color: $secondary-background-color;
   @media screen and (min-width: 480px), (min-resolution: 192dpi) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      -webkit-image-set(url('../.././images/studio/hero-photos/mobile/1x/hero-photo@1x.jpg') 1x, url('../.././images/studio/hero-photos/mobile/1x/hero-photo@1x.webp')
-            1x, url('../.././images/studio/hero-photos/mobile/2x/hero-photo@2x.jpg') 2x, url('../.././images/studio/hero-photos/mobile/2x/hero-photo@2x.webp')
+      -webkit-image-set(url('../images/studio/hero-photos/mobile/1x/hero-photo@1x.jpg') 1x, url('../images/studio/hero-photos/mobile/1x/hero-photo@1x.webp')
+            1x, url('../images/studio/hero-photos/mobile/2x/hero-photo@2x.jpg') 2x, url('../images/studio/hero-photos/mobile/2x/hero-photo@2x.webp')
             2x);
   }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      -webkit-image-set(url('../.././images/studio/hero-photos/tablet/1x/hero-photo@1x.jpg') 1x, url('../.././images/studio/hero-photos/tablet/1x/hero-photo@1x.webp')
-            1x, url('../.././images/studio/hero-photos/tablet/2x/hero-photo@2x.jpg') 2x, url('../.././images/studio/hero-photos/tablet/2x/hero-photo@2x.webp')
+      -webkit-image-set(url('../images/studio/hero-photos/tablet/1x/hero-photo@1x.jpg') 1x, url('../images/studio/hero-photos/tablet/1x/hero-photo@1x.webp')
+            1x, url('../images/studio/hero-photos/tablet/2x/hero-photo@2x.jpg') 2x, url('../images/studio/hero-photos/tablet/2x/hero-photo@2x.webp')
             2x);
   }
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      -webkit-image-set(url('../.././images/studio/hero-photos/desktop/1x/hero-photo@1x.jpg') 1x, url('../.././images/studio/hero-photos/desktop/1x/hero-photo@1x.webp')
-            1x, url('../.././images/studio/hero-photos/desktop/2x/hero-photo@2x.jpg') 2x, url('../.././images/studio/hero-photos/desktop/2x/hero-photo@2x.webp')
+      -webkit-image-set(url('../images/studio/hero-photos/desktop/1x/hero-photo@1x.jpg') 1x, url('../images/studio/hero-photos/desktop/1x/hero-photo@1x.webp')
+            1x, url('../images/studio/hero-photos/desktop/2x/hero-photo@2x.jpg') 2x, url('../images/studio/hero-photos/desktop/2x/hero-photo@2x.webp')
             2x);
   }
 
@@ -46,7 +46,13 @@
 
   @media screen and (min-width: 480px) {
     font-size: 26px;
+    line-height: 1.62;
     max-width: 360px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -69,36 +75,44 @@
 }
 
 .features__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 30px;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .features__placeholder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: $tertiary-background-color;
 
   height: 120px;
   margin-bottom: 30px;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     width: 450px;
+    
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     width: 354px;
+    
   }
 }
 
 .features__item {
   @media screen and (min-width: 480px) {
     width: 450px;
+    
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     width: 354px;
+    
   }
 }
 

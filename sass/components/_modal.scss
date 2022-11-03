@@ -26,7 +26,8 @@
 
   @media screen and (min-width: 480px) {
     position: relative;
-    width: 450px;
+    padding: 40px;
+    
     min-height: 609px;
   }
   @media screen and (min-width: 500px) {
@@ -71,7 +72,7 @@
 }
 
 .modal__text {
-  padding-top: 40px;
+  
   margin: 0;
   margin-bottom: 12px;
 
@@ -83,16 +84,14 @@
 }
 
 .modal-form {
-  padding: 40px;
+  
   margin-left: auto;
   margin-right: auto;
 
   @media screen and (min-width: 480px) {
     width: 450px;
   }
-  @media screen and (min-width: 1200px) {
-    width: 528px;
-  }
+  
 }
 
 .form-field {

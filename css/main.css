@@ -523,7 +523,7 @@ body.modal-open {
 @media screen and (min-width: 480px) {
   .modal {
     position: relative;
-    width: 450px;
+    padding: 40px;
     min-height: 609px;
   }
 }
@@ -565,7 +565,6 @@ body.modal-open {
 }
 
 .modal__text {
-  padding-top: 40px;
   margin: 0;
   margin-bottom: 12px;
   font-weight: 700;
@@ -576,18 +575,12 @@ body.modal-open {
 }
 
 .modal-form {
-  padding: 40px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .modal-form {
     width: 450px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .modal-form {
-    width: 528px;
   }
 }
 
@@ -731,17 +724,17 @@ body.modal-open {
 }
 @media screen and (min-width: 480px), (min-resolution: 192dpi) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../.././images/studio/hero-photos/mobile/1x/hero-photo@1x.jpg") 1x, url("../.././images/studio/hero-photos/mobile/1x/hero-photo@1x.webp") 1x, url("../.././images/studio/hero-photos/mobile/2x/hero-photo@2x.jpg") 2x, url("../.././images/studio/hero-photos/mobile/2x/hero-photo@2x.webp") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/studio/hero-photos/mobile/1x/hero-photo@1x.jpg") 1x, url("../images/studio/hero-photos/mobile/1x/hero-photo@1x.webp") 1x, url("../images/studio/hero-photos/mobile/2x/hero-photo@2x.jpg") 2x, url("../images/studio/hero-photos/mobile/2x/hero-photo@2x.webp") 2x);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../.././images/studio/hero-photos/tablet/1x/hero-photo@1x.jpg") 1x, url("../.././images/studio/hero-photos/tablet/1x/hero-photo@1x.webp") 1x, url("../.././images/studio/hero-photos/tablet/2x/hero-photo@2x.jpg") 2x, url("../.././images/studio/hero-photos/tablet/2x/hero-photo@2x.webp") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/studio/hero-photos/tablet/1x/hero-photo@1x.jpg") 1x, url("../images/studio/hero-photos/tablet/1x/hero-photo@1x.webp") 1x, url("../images/studio/hero-photos/tablet/2x/hero-photo@2x.jpg") 2x, url("../images/studio/hero-photos/tablet/2x/hero-photo@2x.webp") 2x);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../.././images/studio/hero-photos/desktop/1x/hero-photo@1x.jpg") 1x, url("../.././images/studio/hero-photos/desktop/1x/hero-photo@1x.webp") 1x, url("../.././images/studio/hero-photos/desktop/2x/hero-photo@2x.jpg") 2x, url("../.././images/studio/hero-photos/desktop/2x/hero-photo@2x.webp") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/studio/hero-photos/desktop/1x/hero-photo@1x.jpg") 1x, url("../images/studio/hero-photos/desktop/1x/hero-photo@1x.webp") 1x, url("../images/studio/hero-photos/desktop/2x/hero-photo@2x.jpg") 2x, url("../images/studio/hero-photos/desktop/2x/hero-photo@2x.webp") 2x);
   }
 }
 
@@ -760,7 +753,15 @@ body.modal-open {
 @media screen and (min-width: 480px) {
   .hero__title {
     font-size: 26px;
+    line-height: 1.62;
     max-width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -781,26 +782,34 @@ body.modal-open {
 }
 
 .features__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .features__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .features__placeholder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #f5f4fa;
   height: 120px;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .features__placeholder {
     width: 450px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .features__placeholder {
     width: 354px;
   }
@@ -811,7 +820,7 @@ body.modal-open {
     width: 450px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .features__item {
     width: 354px;
   }

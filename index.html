@@ -237,18 +237,18 @@
                     ./images/studio/box-photos/1x/box-1@1x.webp 1x,
                     ./images/studio/box-photos/2x/box-1@2x.webp 2x
                   "
-                  type="image/webp"
+                  type="image/webp" media="(min-width:1200px)"
                 />
                 <source
                   srcset="
                     ./images/studio/box-photos/1x/box-1@1x.jpg 1x,
                     ./images/studio/box-photos/2x/box-1@2x.jpg 2x
                   "
-                  type="image/jpg"
+                  type="image/jpg" media="(min-width:1200px)"
                 />
                 <img
                   class="examples__image"
-                  src="./images/studio/box-photos/1x/box-1@1x.jpg"
+                  src="./images/studio/box-photos/1x/box-1@1x.webp"
                   alt="Розробляємо"
                 />
               </picture>
@@ -261,18 +261,18 @@
                     ./images/studio/box-photos/1x/box-2@1x.webp 1x,
                     ./images/studio/box-photos/2x/box-2@2x.webp 2x
                   "
-                  type="image/webp"
+                  type="image/webp" media="(min-width:1200px)"
                 />
                 <source
                   srcset="
                     ./images/studio/box-photos/1x/box-2@1x.jpg 1x,
                     ./images/studio/box-photos/2x/box-2@2x.jpg 2x
                   "
-                  type="image/jpg"
+                  type="image/jpg" media="(min-width:1200px)"
                 />
                 <img
                   class="examples__image"
-                  src="./images/studio/box-photos/1x/box-1@1x.jpg"
+                  src="./images/studio/box-photos/1x/box-2@1x.webp"
                   alt="Розробляємо"
                 />
               </picture>
@@ -285,18 +285,18 @@
                     ./images/studio/box-photos/1x/box-3@1x.webp 1x,
                     ./images/studio/box-photos/2x/box-3@2x.webp 2x
                   "
-                  type="image/webp"
+                  type="image/webp" media="(min-width:1200px)"
                 />
                 <source
                   srcset="
                     ./images/studio/box-photos/1x/box-3@1x.jpg 1x,
                     ./images/studio/box-photos/2x/box-3@2x.jpg 2x
                   "
-                  type="image/jpg"
+                  type="image/jpg" media="(min-width:1200px)"
                 />
                 <img
                   class="examples__image"
-                  src="./images/studio/box-photos/1x/box-1@1x.jpg"
+                  src="./images/studio/box-photos/1x/box-3@1x.webp"
                   alt="Розробляємо"
                 />
               </picture>
@@ -312,34 +312,56 @@
           <ul class="list team__list">
             <li class="team__item">
               <picture>
-                <source
-                  srcset="
-                    ./images/studio/people/desktop/1x/ihor@1x.webp 1x,
-                    ./images/studio/people/desktop/2x/ihor@2x.webp 2x,
-                    ./images/studio/people/tablet/1x/ihor@1x.webp  1x,
-                    ./images/studio/people/tablet/2x/ihor@2x.webp  2x,
-                    ./images/studio/people/mobile/1x/ihor@1x.webp  1x,
-                    ./images/studio/people/mobile/2x/ihor@2x.webp  2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/studio/people/desktop/1x/ihor@1x.jpg 1x,
-                    ./images/studio/people/desktop/2x/ihor@2x.jpg 2x,
-                    ./images/studio/people/tablet/1x/ihor@1x.jpg  1x,
-                    ./images/studio/people/tablet/2x/ihor@2x.jpg  2x,
-                    ./images/studio/people/mobile/1x/ihor@1x.jpg  1x,
-                    ./images/studio/people/mobile/2x/ihor@2x.jpg  2x
-                  "
-                  type="image/jpg"
-                />
-                <img
-                  src="./images/studio/people/tablet/1x/ihor.jpg"
-                  alt="Ігор Дем'яненко"
-                  class="team__image"
-                />
-              </picture>
+                  <source
+                    srcset="
+                      ./images/studio/people/mobile/1x/ihor.webp 1x,
+                      ./images/studio/people/mobile/2x/ihor.webp 2x
+                    "
+                    media="(max-width:767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/mobile/1x/ihor.jpg 1x,
+                      ./images/studio/people/mobile/2x/ihor.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/tablet/1x/ihor.webp 1x,
+                      ./images/studio/people/tablet/2x/ihor.webp 2x
+                    "
+                    media="(max-width:1199px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/tablet/1x/ihor.jpg 1x,
+                      ./images/studio/people/tablet/2x/ihor.jpg 2x
+                    "
+                    media="(max-width:1199px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/desktop/1x/ihor.webp 1x,
+                      ./images/studio/people/desktop/2x/ihor.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/desktop/1x/ihor.jpg 1x,
+                      ./images/studio/people/desktop/2x/ihor.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/jpeg"
+                  />
+                  <img src="./images/studio/people/desktop/1x/ihor.webp" alt="Ігор Дем'яненко" />
+                </picture>
               <div class="team__container">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="team__pos">Product Designer</p>
@@ -373,34 +395,56 @@
             </li>
             <li class="team__item">
               <picture>
-                <source
-                  srcset="
-                    ./images/studio/people/desktop/1x/olha@1x.webp 1x,
-                    ./images/studio/people/desktop/2x/olha@2x.webp 2x,
-                    ./images/studio/people/tablet/1x/olha.webp     1x,
-                    ./images/studio/people/tablet/2x/olha.webp     2x,
-                    ./images/studio/people/mobile/1x/olha.webp     1x,
-                    ./images/studio/people/mobile/2x/olha.webp     2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/studio/people/desktop/1x/olha@1x.jpg 1x,
-                    ./images/studio/people/desktop/2x/olha@2x.jpg 2x,
-                    ./images/studio/people/tablet/1x/olha.jpg     1x,
-                    ./images/studio/people/tablet/2x/olha.jpg     2x,
-                    ./images/studio/people/mobile/1x/olha.jpg     1x,
-                    ./images/studio/people/mobile/2x/olha.jpg     2x
-                  "
-                  type="image/jpg"
-                />
-                <img
-                  src="./images/studio/people/tablet/1x/olha.jpg"
-                  alt="Ольга Рєпіна"
-                  class="team__image"
-                />
-              </picture>
+                  <source
+                    srcset="
+                      ./images/studio/people/mobile/1x/olha.webp 1x,
+                      ./images/studio/people/mobile/2x/olha.webp 2x
+                    "
+                    media="(max-width:767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/mobile/1x/olha.jpg 1x,
+                      ./images/studio/people/mobile/2x/olha.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/tablet/1x/olha.webp 1x,
+                      ./images/studio/people/tablet/2x/olha.webp 2x
+                    "
+                    media="(max-width:1199px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/tablet/1x/olha.jpg 1x,
+                      ./images/studio/people/tablet/2x/olha.jpg 2x
+                    "
+                    media="(max-width:1199px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/desktop/1x/olha.webp 1x,
+                      ./images/studio/people/desktop/2x/olha.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/desktop/1x/olha.jpg 1x,
+                      ./images/studio/people/desktop/2x/olha.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/jpeg"
+                  />
+                  <img src="./images/studio/people/desktop/1x/olha.webp" alt="Ольга Рєпіна" />
+                </picture>
 
               <div class="team__container">
                 <h3 class="team__name">Ольга Рєпіна</h3>
@@ -435,34 +479,56 @@
             </li>
             <li class="team__item">
               <picture>
-                <source
-                  srcset="
-                    ./images/studio/people/mobile/1x/mykola.webp     1x,
-                    ./images/studio/people/mobile/2x/mykola.webp     2x,
-                    ./images/studio/people/tablet/1x/mykola.webp     1x,
-                    ./images/studio/people/tablet/2x/mykola.webp     2x,                    
-                    ./images/studio/people/desktop/1x/mykola@1x.webp 1x,
-                    ./images/studio/people/desktop/2x/mykola@2x.webp 2x,
-                  "
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/studio/people/mobile/1x/mykola.jpg     1x,
-                    ./images/studio/people/mobile/2x/mykola.jpg     2x,
-                    ./images/studio/people/tablet/1x/mykola.jpg     1x,
-                    ./images/studio/people/tablet/2x/mykola.jpg     2x,
-                    ./images/studio/people/desktop/1x/mykola@1x.jpg 1x,
-                    ./images/studio/people/desktop/2x/mykola@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
-                <img
-                  src="./images/studio/people/tablet/1x/mykola.jpg"
-                  alt="Микола Тарасов"
-                  class="team__image"
-                />
-              </picture>
+                  <source
+                    srcset="
+                      ./images/studio/people/mobile/1x/mykola.webp 1x,
+                      ./images/studio/people/mobile/2x/mykola.webp 2x
+                    "
+                    media="(max-width:767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/mobile/1x/mykola.jpg 1x,
+                      ./images/studio/people/mobile/2x/mykola.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/tablet/1x/mykola.webp 1x,
+                      ./images/studio/people/tablet/2x/mykola.webp 2x
+                    "
+                    media="(max-width:1199px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/tablet/1x/mykola.jpg 1x,
+                      ./images/studio/people/tablet/2x/mykola.jpg 2x
+                    "
+                    media="(max-width:1199px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/desktop/1x/mykola.webp 1x,
+                      ./images/studio/people/desktop/2x/mykola.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/desktop/1x/mykola.jpg 1x,
+                      ./images/studio/people/desktop/2x/mykola.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/jpeg"
+                  />
+                  <img src="./images/studio/people/desktop/1x/mykola.webp" alt="Микола Тарасов" />
+                </picture>
               <div class="team__container">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p lang="en" class="team__pos">Marketing</p>
@@ -499,34 +565,56 @@
             </li>
             <li class="team__item">
               <picture>
-                <source
-                  srcset="
-                    ./images/studio/people/mobile/1x/mykhailo.webp     1x,
-                    ./images/studio/people/mobile/2x/mykhailo.webp     2x,
-                    ./images/studio/people/tablet/1x/mykhailo.webp     1x,
-                    ./images/studio/people/tablet/2x/mykhailo.webp     2x,                    
-                    ./images/studio/people/desktop/1x/mykhailo@1x.webp 1x,
-                    ./images/studio/people/desktop/2x/mykhailo@2x.webp 2x,
-                  "
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/studio/people/mobile/1x/mykhailo.jpg     1x,
-                    ./images/studio/people/mobile/2x/mykhailo.jpg     2x,
-                    ./images/studio/people/tablet/1x/mykhailo.jpg     1x,
-                    ./images/studio/people/tablet/2x/mykhailo.jpg     2x,                    
-                    ./images/studio/people/desktop/1x/mykhailo@1x.jpg 1x,
-                    ./images/studio/people/desktop/2x/mykhailo@2x.jpg 2x,
-                  "
-                  type="image/jpg"
-                />
-                <img
-                  src="./images/studio/people/tablet/1x/mykhailo.jpg"
-                  alt="Михайло Єрмаков"
-                  class="team__image"
-                />
-              </picture>
+                  <source
+                    srcset="
+                      ./images/studio/people/mobile/1x/mykhailo.webp 1x,
+                      ./images/studio/people/mobile/2x/mykhailo.webp 2x
+                    "
+                    media="(max-width:767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/mobile/1x/mykhailo.jpg 1x,
+                      ./images/studio/people/mobile/2x/mykhailo.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/tablet/1x/mykhailo.webp 1x,
+                      ./images/studio/people/tablet/2x/mykhailo.webp 2x
+                    "
+                    media="(max-width:1199px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/tablet/1x/mykhailo.jpg 1x,
+                      ./images/studio/people/tablet/2x/mykhailo.jpg 2x
+                    "
+                    media="(max-width:1199px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/desktop/1x/mykhailo.webp 1x,
+                      ./images/studio/people/desktop/2x/mykhailo.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/studio/people/desktop/1x/mykhailo.jpg 1x,
+                      ./images/studio/people/desktop/2x/mykhailo.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                    type="image/jpeg"
+                  />
+                  <img src="./images/studio/people/desktop/1x/mykhailo.webp" alt="Михайло Єрмаков" />
+                </picture>
               <div class="team__container">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p lang="en" class="team__pos">UI Designer</p>
