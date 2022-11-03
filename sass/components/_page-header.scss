@@ -262,12 +262,12 @@
 
 .nav-menu__social{
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .nav-menu__social-item{
-  &:not(:last-child){
-    margin-right: 20px;
-  }
+  flex-basis: calc((100% - 3*20px)/4);
   
 }
 

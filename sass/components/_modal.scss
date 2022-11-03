@@ -24,7 +24,7 @@
   justify-content: center;
   flex-direction: column;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 479px) and (max-width:1199px) {
     position: relative;
     padding: 40px;
     
