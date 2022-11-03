@@ -9,20 +9,20 @@
   background-color: $secondary-background-color;
   @media screen and (min-width: 480px), (min-resolution: 192dpi) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      -webkit-image-set(url('./images/studio/hero-photos/mobile/1x/hero-photo@1x.jpg') 1x, url('./images/studio/hero-photos/mobile/1x/hero-photo@1x.webp')
-            1x, url('./images/studio/hero-photos/mobile/2x/hero-photo@2x.jpg') 2x, url('./images/studio/hero-photos/mobile/2x/hero-photo@2x.webp')
+      -webkit-image-set(url('../images/studio/hero-photos/mobile/1x/hero-photo@1x.jpg') 1x, url('../images/studio/hero-photos/mobile/1x/hero-photo@1x.webp')
+            1x, url('../images/studio/hero-photos/mobile/2x/hero-photo@2x.jpg') 2x, url('../images/studio/hero-photos/mobile/2x/hero-photo@2x.webp')
             2x);
   }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      -webkit-image-set(url('./images/studio/hero-photos/tablet/1x/hero-photo@1x.jpg') 1x, url('./images/studio/hero-photos/tablet/1x/hero-photo@1x.webp')
-            1x, url('./images/studio/hero-photos/tablet/2x/hero-photo@2x.jpg') 2x, url('./images/studio/hero-photos/tablet/2x/hero-photo@2x.webp')
+      -webkit-image-set(url('../images/studio/hero-photos/tablet/1x/hero-photo@1x.jpg') 1x, url('../images/studio/hero-photos/tablet/1x/hero-photo@1x.webp')
+            1x, url('../images/studio/hero-photos/tablet/2x/hero-photo@2x.jpg') 2x, url('../images/studio/hero-photos/tablet/2x/hero-photo@2x.webp')
             2x);
   }
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      -webkit-image-set(url('./images/studio/hero-photos/desktop/1x/hero-photo@1x.jpg') 1x, url('./images/studio/hero-photos/desktop/1x/hero-photo@1x.webp')
-            1x, url('./images/studio/hero-photos/desktop/2x/hero-photo@2x.jpg') 2x, url('./images/studio/hero-photos/desktop/2x/hero-photo@2x.webp')
+      -webkit-image-set(url('../images/studio/hero-photos/desktop/1x/hero-photo@1x.jpg') 1x, url('../images/studio/hero-photos/desktop/1x/hero-photo@1x.webp')
+            1x, url('../images/studio/hero-photos/desktop/2x/hero-photo@2x.jpg') 2x, url('../images/studio/hero-photos/desktop/2x/hero-photo@2x.webp')
             2x);
   }
 
