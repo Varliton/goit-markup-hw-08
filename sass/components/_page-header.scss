@@ -84,12 +84,15 @@
   }
   @media screen and (min-width: 768px) and (max-width:1199) {
     flex-direction: column;
-    align-content: center;
+    align-content: center; 
+    
   }
+  
   @media screen and (min-width:1200px) {
     display: flex;
+    
   }
-}
+  }
 
 
 .contacts__link {
@@ -98,10 +101,19 @@
 
   text-decoration: none;
   font-weight: 500;
-  line-height: 1.14;
+  
   letter-spacing: 0.02em;
 
   transition: color 250ms $main-animation, fill 250ms $main-animation;
+
+  @media screen and (max-width:1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 
   &:hover,
   &:focus {
@@ -112,6 +124,26 @@
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+  &--mail{
+    @media screen and (max-width:1199px) {
+    width: 14px;
+    height: 10px;
+  }
+  @media screen and (min-width:1200px) {
+    width: 16px;
+    height: 12px;
+  }
+  }
+  &--tel{
+    @media screen and (max-width:1199px) {
+    width: 10px;
+    height: 14px;
+  }
+  @media screen and (min-width:1200px) {
+    width: 10px;
+    height: 16px;
+  }
+  }
 }
 
 .nav-menu {

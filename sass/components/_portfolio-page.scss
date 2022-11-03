@@ -1,15 +1,19 @@
 .portfolio__list {
   display: flex;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width:767px) {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-bottom: 40px;
     gap: 8px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and(max-width: 1199px) {
     justify-content: center;
     margin-bottom: 30px;
   }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
+  
 }
 
 .portfolio__btn {
@@ -53,6 +57,9 @@
   gap: 30px;
 
   margin: -15px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 32px;
+  }
 }
 
 .works__description {
@@ -88,6 +95,10 @@
     display: flex;
     align-items: center;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
   .works__item:hover & {
     opacity: 1;
     background-color: rgba(33, 150, 243, 0.9);
@@ -103,6 +114,9 @@
   }
   @media screen and (min-width: 768px) {
     width: 356px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
   }
 
   transition: box-shadow 250ms $main-animation;
@@ -149,9 +163,12 @@
     border: 1px solid $works-item-border-color;
     border-top: none;
   }
-}
-.works__wrapper--padding {
-  @media screen and (min-width: 768px) {
+  &--padding {
+  @media screen and (max-width: 1199px) {
     padding-bottom: 56px;
   }
+  @media screen and (min-width:1200px) {
+    padding-bottom: 20px;
+  }
+}
 }

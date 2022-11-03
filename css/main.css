@@ -163,9 +163,20 @@ body.modal-open {
   align-items: center;
   text-decoration: none;
   font-weight: 500;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 1199px) {
+  .contacts__link {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
@@ -174,6 +185,30 @@ body.modal-open {
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+@media screen and (max-width: 1199px) {
+  .contacts__icon--mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon--mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .contacts__icon--tel {
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon--tel {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .nav-menu {
@@ -332,6 +367,7 @@ body.modal-open {
   .page-footer__flex {
     display: flex;
     align-items: baseline;
+    text-align: start;
   }
 }
 
@@ -441,12 +477,12 @@ body.modal-open {
     display: flex;
     flex-direction: column;
     margin-left: 93px;
+    margin-top: 0;
+    text-align: start;
   }
 }
 
 .submit-form__input {
-  display: flex;
-  gap: 20px;
   width: 358px;
   padding: 15px 16px;
   font-size: 16px;
@@ -459,6 +495,8 @@ body.modal-open {
 @media screen and (max-width: 1199px) {
   .submit-form__input {
     width: 450px;
+    display: flex;
+    gap: 20px;
   }
 }
 
@@ -782,25 +820,18 @@ body.modal-open {
 }
 
 .features__list {
-  gap: 30px;
-}
-@media screen and (max-width: 1199px) {
-  .features__list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .features__placeholder {
   background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 120px;
   margin-bottom: 30px;
 }
@@ -809,21 +840,23 @@ body.modal-open {
     width: 450px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .features__placeholder {
     width: 354px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__placeholder {
+    width: 270px;
   }
 }
 
-@media screen and (min-width: 480px) {
-  .features__item {
-    width: 450px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .features__item {
-    width: 354px;
-  }
+.features__item {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .features__title {
@@ -831,6 +864,11 @@ body.modal-open {
   margin-bottom: 10px;
   text-transform: uppercase;
   line-height: 1.14;
+}
+@media screen and (max-width: 767px) {
+  .features__title {
+    text-align: center;
+  }
 }
 
 .features__text {
@@ -891,39 +929,19 @@ body.modal-open {
 
 @media screen and (min-width: 480px) {
   .team__list {
-    width: 450px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
   .team__list {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__list {
-    width: 270px;
     display: flex;
-    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
 .team__image {
   display: block;
-}
-@media screen and (min-width: 480px) {
-  .team__image {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .team__image {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__image {
-    width: 270px;
-  }
 }
 
 .team__item {
@@ -932,10 +950,9 @@ body.modal-open {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
-@media screen and (min-width: 1200px) {
-  .team__item:not(:last-child) {
-    margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .team__item {
+    margin-bottom: 30px;
   }
 }
 
@@ -1008,14 +1025,19 @@ body.modal-open {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .clients__link {
     width: 210px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__link {
     width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
   }
 }
 .clients__link:hover, .clients__link:focus {
@@ -1026,7 +1048,7 @@ body.modal-open {
 .portfolio__list {
   display: flex;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio__list {
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -1034,10 +1056,15 @@ body.modal-open {
     gap: 8px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__list {
     justify-content: center;
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__list {
+    justify-content: center;
   }
 }
 
@@ -1076,6 +1103,11 @@ body.modal-open {
   gap: 30px;
   margin: -15px;
 }
+@media screen and (min-width: 1200px) {
+  .works {
+    margin-top: 32px;
+  }
+}
 
 .works__description {
   position: relative;
@@ -1110,6 +1142,12 @@ body.modal-open {
     align-items: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .works__label {
+    display: flex;
+    align-items: center;
+  }
+}
 .works__item:hover .works__label {
   opacity: 1;
   background-color: rgba(33, 150, 243, 0.9);
@@ -1128,6 +1166,11 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .works__item {
     width: 356px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .works__item {
+    width: 370px;
   }
 }
 .works__item:hover {
@@ -1176,9 +1219,13 @@ body.modal-open {
     border-top: none;
   }
 }
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .works__wrapper--padding {
     padding-bottom: 56px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .works__wrapper--padding {
+    padding-bottom: 20px;
   }
 }/*# sourceMappingURL=main.css.map */
