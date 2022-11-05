@@ -81,7 +81,7 @@
     margin-top: 60px;
     text-align: center;
   }
-  @media screen and (min-width: 768px)  {
+  @media screen and (max-width: 1199px)  {
     display: block;
     
     text-align: center;
@@ -142,10 +142,8 @@
     margin-top: 60px;
     text-align: center;
   }
-  @media screen and (min-width:768px) {
+  @media screen and (max-width:1199px) {
     display: inline-flex;
-    
-    
     align-items: center;
     flex-direction: column;
   }
@@ -160,7 +158,7 @@
 
 
 .submit-form__input {
-  width: 358px;
+  
 
   padding: 15px 16px;
 
@@ -172,12 +170,15 @@
   color: rgba(255, 255, 255, 0.6);
 
   @media screen and (max-width: 1199px) {
-    
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
     gap: 20px;
+  }
+  @media screen and (min-width:1200px) {
+    width: 358px;
   }
 }
 

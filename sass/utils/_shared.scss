@@ -5,7 +5,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $primary-text-color;
-  &.modal-open{
+  &.modal-open {
     overflow: hidden;
   }
 }
@@ -26,8 +26,12 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (max-width:1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
-
-

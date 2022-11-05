@@ -7,7 +7,7 @@
   text-align: center;
 
   background-color: $secondary-background-color;
-  @media screen and  (min-width: 480px), (min-resolution: 192dpi) {
+  @media screen and (min-width: 480px), (min-resolution: 192dpi) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       -webkit-image-set(url('../images/studio/hero-photos/mobile/1x/hero-photo@1x.jpg') 1x, url('../images/studio/hero-photos/mobile/1x/hero-photo@1x.webp')
             1x, url('../images/studio/hero-photos/mobile/2x/hero-photo@2x.jpg') 2x, url('../images/studio/hero-photos/mobile/2x/hero-photo@2x.webp')
@@ -119,12 +119,11 @@
 }
 
 .features__item {
-  @media screen and (max-width:479px) {
+  @media screen and (max-width: 479px) {
     margin-bottom: 30px;
   }
   @media screen and (max-width: 1199px) {
     flex-basis: calc((100% - 30px) / 2);
-    
   }
 }
 
@@ -194,7 +193,6 @@
 
 .team__list {
   @media screen and (max-width: 767px) {
-    
     text-align: center;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -203,7 +201,6 @@
     flex-wrap: wrap;
     text-align: center;
     gap: 30px;
-    
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -224,18 +221,22 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  @media screen and (max-width: 767px)  {
-    
+  @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
-  
-  
-  
 }
 
 .team__container {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.team-social {
+  
+    display: inline-flex;
+    justify-content: center;
+    
+    gap: 10px;
   
 }
 
@@ -243,7 +244,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
 
   width: 44px;
   height: 44px;
@@ -260,9 +260,6 @@
 }
 
 .team-social__list {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .team__name {
@@ -287,7 +284,6 @@
 .clients {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .clients__list {
@@ -298,16 +294,15 @@
   gap: 30px;
 }
 
-.clients__item{
+.clients__item {
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    flex-basis: calc((100% - 30px)/2)
+    flex-basis: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    
-    flex-basis: calc((100% - 2*30px)/3)
+    flex-basis: calc((100% - 2 * 30px) / 3);
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 5*30px)/6)
+    flex-basis: calc((100% - 5 * 30px) / 6);
   }
 }
 
@@ -329,8 +324,7 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    
-    flex-basis: calc((100% - 30px)/3);
+    flex-basis: calc((100% - 30px) / 3);
   }
   @media screen and (min-width: 1200px) {
     width: 100%;

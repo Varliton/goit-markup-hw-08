@@ -10,6 +10,12 @@
   line-height: 1.38;
   text-decoration: none;
   color: $primary-black-color;
+  @media screen and (max-width:767px){
+    padding: 16px 0;
+  }
+  @media screen and (min-width:768px) {
+    padding: 26px 0;
+  }
   &--blue {
     color: $secondary-text-color;
   }
@@ -245,7 +251,7 @@
 
   text-decoration: none;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 27px;
   line-height: 1.17;
   letter-spacing: 0.02em;
 
@@ -253,7 +259,8 @@
 
   &--blue {
     display: inline-flex;
-    font-size: 34px;
+    font-size: 27px;
+    font-weight: 500;
     color: $secondary-text-color;
     text-decoration: none;
     margin-bottom: 32px;

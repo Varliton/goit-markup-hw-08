@@ -27,7 +27,6 @@
   @media screen and (max-width: 479px) and (max-width:1199px) {
     position: relative;
     padding: 40px;
-    
     min-height: 609px;
   }
   @media screen and (min-width: 500px) {
@@ -35,6 +34,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
+    padding: 40px;
   }
 
   @media screen and (min-width: 1200px) {
