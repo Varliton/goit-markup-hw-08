@@ -88,11 +88,6 @@ body.modal-open {
     padding: 16px 0;
   }
 }
-@media screen and (min-width: 768px) {
-  .site-nav__logo {
-    padding: 26px 0;
-  }
-}
 .site-nav__logo--blue {
   color: #2196f3;
 }
@@ -505,7 +500,7 @@ body.modal-open {
     text-align: center;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .submit-container {
     display: inline-flex;
     align-items: center;
@@ -533,7 +528,6 @@ body.modal-open {
 @media screen and (max-width: 1199px) {
   .submit-form__input {
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -1164,6 +1158,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .portfolio__list {
     justify-content: center;
+    margin-bottom: 50px;
   }
 }
 
@@ -1201,11 +1196,6 @@ body.modal-open {
   flex-wrap: wrap;
   gap: 30px;
   margin: -15px;
-}
-@media screen and (min-width: 1200px) {
-  .works {
-    margin-top: 32px;
-  }
 }
 
 .works__description {
